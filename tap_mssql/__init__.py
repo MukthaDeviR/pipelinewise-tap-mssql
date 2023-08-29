@@ -228,6 +228,7 @@ def discover_catalog(mssql_conn, config):
                 table_info[db] = {}
 
             table_info[db][table] = {"row_count": None, "is_view": table_type == "VIEW"}
+        LOGGER.info("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
         LOGGER.info("Tables fetched, fetching columns")
         cur.execute(
             """with constraint_columns as (
